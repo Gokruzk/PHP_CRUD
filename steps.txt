@@ -1,0 +1,2 @@
+1. String connection
+2. Create form, and execute the query

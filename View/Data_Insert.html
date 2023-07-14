@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mostrar datos</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: rgb(165, 71, 71);
+      }
+      input {
+        background-color: rgb(37, 45, 43);
+      }
+      button {
+        background-color: burlywood;
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        border-radius: 3px;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+        <h1>Ingreso de datos</h1>
+          <form action="../Model/Insert.php" method="post">
+            <div style="padding: 10px">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" style="width: 300px" />
+            </div>
+            <div style="padding: 10px">
+              <label for="lname">Apellido</label>
+              <input id="lname" name="lname" type="text" style="width: 300px" />
+            </div>
+            <div style="padding: 10px">
+              <label for="psw">Contraseña</label>
+              <input id="psw" name="psw" type="password" style="width: 300px" />
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+    </center>
+  </body>
+</html>
