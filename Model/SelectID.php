@@ -48,7 +48,7 @@
         $student = $res->fetch_assoc();
         ?>
         <center>
-            <h1>ESTUDIANTE A ACTUALIZAR</h1>
+            <h1>ESTUDIANTE A EDITAR</h1>
             <form action="../Model/Update.php" method="post">
                 <div style="padding: 10px">
                     <label for="id">ID</label>
@@ -81,7 +81,7 @@
         ?>
         <script>alert("Error en la consulta")</script>
         <?php
-        include("../View/Update_Form.php");
+        include("../View/Update_Form.html");
     }
     ?>
 </body>

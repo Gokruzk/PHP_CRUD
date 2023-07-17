@@ -76,7 +76,7 @@
       $res->close(); ?>
       </table>
       <div style="padding-top: 30px">
-        <form action="../Model//Delete.php" method="post">
+        <form action="../Model/Delete.php" method="post">
           <label for="">ID</label>
           <input type="text" name="id" />
           <button type="submit">Eliminar</button>
