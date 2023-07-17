@@ -6,10 +6,10 @@ $psw = sha1($_POST["psw"]);
 $sql = "INSERT INTO datos(nombre,apellido,clave) VALUES('$name','$lname','$psw')";
 $res = mysqli_query($conn, $sql);
 if ($res) {
-    include("../View/Data_Insert.html");
     ?>
     <script>alert("Estudiante insertado")</script>
     <?php
+    header("location: ../View/Show_data.php");
 } else {
     ?>
     <script>alert("Error al insertar")</script>

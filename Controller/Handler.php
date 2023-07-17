@@ -47,7 +47,7 @@ if ($getValue == 1) {
 } else if ($getValue == 3) {
     include("../View/Delete_id.php");
 } else if ($getValue == 4) {
-    include("../View/Update_Form.html");
+    include("../View/Update_Form.php");
 }
 ?>
 </center>

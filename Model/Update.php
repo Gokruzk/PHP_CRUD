@@ -9,7 +9,7 @@ if ($res) {
     ?>
     <script>alert("Estudiante Actualizado")</script>
     <?php
-    include("../View/Update_Form.html");
+    include("../View/Update_Form.php");
 } else {
     ?>
     <script>alert("Error al actualizar")</script>
