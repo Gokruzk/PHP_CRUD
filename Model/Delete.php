@@ -1,6 +1,6 @@
 <?php
 include("../Config/Connection.php");
-$id = $_POST["id"];
+$id = $_GET["id"];
 $sql = "DELETE FROM datos WHERE id = '$id'";
 $res = mysqli_query($conn, $sql);
 if ($res) {

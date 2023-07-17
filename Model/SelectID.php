@@ -41,7 +41,7 @@
 <body>
     <?php
     include("../Config/Connection.php");
-    $id = $_POST["id"];
+    $id = $_GET["id"];
     $sql = "SELECT * FROM datos WHERE id = '$id'";
     $res = mysqli_query($conn, $sql);
     if ($res && mysqli_num_rows($res) > 0) {
