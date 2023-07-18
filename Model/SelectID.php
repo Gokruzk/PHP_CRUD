@@ -52,7 +52,7 @@
             <form action="../Model/Update.php" method="post">
                 <div style="padding: 10px">
                     <label for="id">ID</label>
-                    <input disabled id="id" name="id" type="text" style="width: 300px" />
+                    <input readonly id="id" name="id" type="text" style="width: 300px" />
                 </div>
                 <div style="padding: 10px">
                     <label for="name">Nombre</label>
