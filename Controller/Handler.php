@@ -48,6 +48,8 @@ if ($getValue == 1) {
     include("../View/Delete_id.php");
 } else if ($getValue == 4) {
     include("../View/Update_Form.php");
+}else if($getValue == 5){
+    include("../Model/Report.php");
 }
 ?>
 </center>

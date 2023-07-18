@@ -1,20 +1,18 @@
 <?php
-require('../FPDF/fpdf.php');
-
+require('../fpdf186/fpdf.php');
 class PDF extends FPDF
 {
     // Page header
     function Header()
     {
         // Logo
-        // $this->Image('logo.png', 10, 6, 30);
+        $this->Image('../img/espoch.png', 5, 6, 20);
         // Arial bold 15
         $this->SetFont('Arial', 'B', 15);
         // Move to the right
         $this->Cell(80);
         // Title
-        //heigth, weigth, border, ..., text-align
-        $this->Cell(30, 10, 'LISTA DE ESTUDIANTES', 0, 0, 'C');
+        $this->Cell(30, 10, 'REPORTE DE DATOS', 0, 0, 'C');
         // Line break
         $this->Ln(20);
     }
@@ -30,10 +28,4 @@ class PDF extends FPDF
         $this->Cell(0, 10, 'Page ' . $this->PageNo() . '/{nb}', 0, 0, 'C');
     }
 }
-$pdf = new PDF();
-$pdf->AliasNbPages();
-$pdf->AddPage();
-$pdf->SetFont('Arial', 'B', 16);
-// $pdf->Cell(40, 10, 'Hello World!');
-$pdf->Output();
 ?>
