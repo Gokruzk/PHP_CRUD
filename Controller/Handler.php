@@ -1,4 +1,3 @@
-<!-- <center style="padding-top: 30px"> -->
 <?php
 $getValue = $_GET['value'];
 // echo "Valor recibido: $getValue";
@@ -52,4 +51,3 @@ if ($getValue == 1) {
     include("../Model/Report.php");
 }
 ?>
-</center>
